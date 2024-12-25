@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+main {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#logo {
+    filter: brightness(0);
+    transition: filter 0.5s ease, top 1s ease, opacity 0.5s ease;
+    position: relative;
+    top: 70vh;
+    aspect-ratio: 18 / 15;
+    width: 9vw;
+}
