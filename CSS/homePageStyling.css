@@ -13,6 +13,7 @@ body{
     align-items: center;
     height: 100vh;
     width: 100%;
+    position: relative; 
 }
 
 .fade-text {
@@ -24,29 +25,30 @@ body{
 .stationary-letters{
     padding: 0;
     margin: 0;
+    transition: all 0.8s ease;
 }
 
 #r-letter{
     position: absolute;
-    transition: all 0.4s ease;
+    left: 2.3%;
 }
 
 #a-letter{
     position: absolute;
-    transition: all 0.4s ease;
+    left: 21%;
 }
 
 #s-letter{
     position: absolute;
-    transition: all 0.4s ease;
+    left: 34.6%;
 }
 
 #h-letter{
     position: absolute;
-    transition: all 0.4s ease;
+    left: 75.6%;
 }
 
 #second-a-letter{
     position: absolute;
-    transition: all 0.4s ease;
+    left: 91.7%;
 }
