@@ -153,13 +153,17 @@ header{
 
     #burger-menu{
         visibility: visible;
+        opacity: 1;
+        padding-left: 76%;
     }
 
     #nav-bar ul{
+        margin-top: 2.5vh;
         display: flex;
         flex-direction: column;
         gap: 2vh;
         justify-content: right;
+        font-size: 1.5vh;
     }
 
     #nav-bar{
@@ -168,7 +172,7 @@ header{
         margin-right: 0;
         margin-bottom: 0;
         height: max-content;
-        right: 5%;
+        right: 12%;
     }
 
     .navBarOption{
@@ -177,17 +181,12 @@ header{
         opacity: 0;
         visibility: hidden;
         justify-content: right;
-        background-color: #b0d0d3;
         transition: all 0.5s ease;
     }
 
     .navBarOption.show {
         visibility: visible; 
         opacity: 1;
-    }
-
-    #nav-bar.show{
-        background-color: #b0d0d3;
     }
 }
 
