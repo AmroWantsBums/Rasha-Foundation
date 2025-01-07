@@ -13,11 +13,11 @@ setTimeout(() => {
         text.style.opacity = 0;
     });    
     setTimeout(() => {
-        rLetter.style.left = "44%";   
-        aLetter.style.left = "47%";   
-        sLetter.style.left = "50%";   
-        hLetter.style.left = "52.7%";   
-        otherALetter.style.left = "55.8%";   
+        rLetter.style.left = "44vw";   
+        aLetter.style.left = "47vw";   
+        sLetter.style.left = "50vw";   
+        hLetter.style.left = "52.7vw";   
+        otherALetter.style.left = "55.8vw";   
     }, 1000);
 }, 500);
 

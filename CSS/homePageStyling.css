@@ -35,27 +35,27 @@ body.lock-scroll{
 
 #r-letter{
     position: absolute;
-    left: 3.8%;
+    left: 4.1vw;
 }
 
 #a-letter{
     position: absolute;
-    left: 21.8%;
+    left: 22.1vw;
 }
 
 #s-letter{
     position: absolute;
-    left: 34.7%;
+    left: 34.7vw;
 }
 
 #h-letter{
     position: absolute;
-    left: 75.2%;
+    left: 75.2vw;
 }
 
 #second-a-letter{
     position: absolute;
-    left: 92%;
+    left: 91.5vw;
 }
 
 
@@ -228,7 +228,9 @@ body.lock-scroll{
 }
 
 #volunteer-signup-button{
-    color: rgb(170, 59, 59);
+    width: 30%;
+    height: 5vh;
+    border-radius: 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -256,10 +258,17 @@ body.lock-scroll{
         border-radius: 24px;
     }
 
+    #volunteer-signup-button{
+        width: 80%;
+        height: 5vh;
+        border-radius: 24px;
+    }
+    
     #beneficiaries-section{
         margin-top: 20vh;
         position: relative;
         display: flex;
+        gap: 12vh;
         flex-direction: column;
     }
 
