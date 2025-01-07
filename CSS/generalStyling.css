@@ -1,0 +1,124 @@
+body {
+    margin-top: 0;    
+    cursor: none;     
+    font-family: 'Poppins', sans-serif;
+}
+
+#cursor-circle{
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+  }
+  
+:root {
+    --cursor-size: 28px;
+    --bg: #db6767;
+}
+
+#cursor {
+    position: fixed;
+    top: calc(var(--cursor-size) * -0.5);
+    left:  calc(var(--cursor-size) * -0.5);
+    pointer-events: none;
+    mix-blend-mode: difference;  
+    filter: url(#goo);
+    z-index: 10000;
+}
+
+.cursor-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--cursor-size);
+    height: var(--cursor-size);
+    border-radius: var(--cursor-size);
+    background: var(--bg);
+    transform-origin: center center;
+    z-index: 10000;
+}
+
+
+.goo {
+    display: none;
+}                
+    
+.buttons {
+    border: none;
+    position: relative; 
+    overflow: hidden;
+    background-color: #939393; 
+    color: black; 
+    transition: color 0.5s ease;
+    display: inline-block;
+}
+
+.buttons::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffffff, #c5bdbd); 
+    transform: translateX(-100%); 
+    transition: transform 0.5s ease; 
+    z-index: 0; 
+}
+
+.buttons:hover::before {
+    transform: translateX(0);
+}
+
+.buttons:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer; 
+    background-color: #919191; 
+    z-index: 1; 
+}
+
+.buttons span {
+    position: relative;
+    z-index: 1; 
+    font-size: 1.9vh; 
+}
+
+
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 12%; 
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px; 
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ffffff, #000000, #ffffff); 
+    border-radius: 10px; 
+}
+
+#footer{
+    margin-top: 20vh;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid;
+}
+
+
+@media screen and (max-width: 1024px) {
+   #cursor {
+    display: none;
+   }
+
+   .buttons span {
+    position: relative;
+    z-index: 1; 
+    font-size: 1.2vh; 
+}
+
+}

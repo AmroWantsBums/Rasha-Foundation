@@ -2,8 +2,13 @@ body{
     margin: 0;
 }
 
+
+body.lock-scroll{
+    overflow: hidden;
+}
+
 #text-container {
-    font-size: 4vw;
+    font-size: 3.1vw;
     transition: all 1s ease;
 }
 
@@ -11,7 +16,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     position: relative; 
 }
@@ -30,25 +35,215 @@ body{
 
 #r-letter{
     position: absolute;
-    left: 2.3%;
+    left: 3.8%;
 }
 
 #a-letter{
     position: absolute;
-    left: 21%;
+    left: 21.8%;
 }
 
 #s-letter{
     position: absolute;
-    left: 34.6%;
+    left: 34.7%;
 }
 
 #h-letter{
     position: absolute;
-    left: 75.6%;
+    left: 75.2%;
 }
 
 #second-a-letter{
     position: absolute;
-    left: 91.7%;
+    left: 92%;
+}
+
+
+#scroll-text{
+    position: absolute;
+    bottom: 10vh;
+    transition: all 0.5s ease;
+}
+
+#details-section{
+    background-color: rgba(203, 203, 203, 0.396);
+    width: 40%;
+    margin: 40vh 0vw 0vh 3vw;
+    padding: 1vw;
+    height: 60vh;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    font-size: 2.3vh;
+    position: relative;
+    transition: all 1.2s ease;
+}
+
+#intro-heading{
+    position: absolute;
+    font-weight: 100;
+}
+
+#vision-photo{
+    aspect-ratio: 15 / 23;
+    width: 30%;
+    float: right;
+    border-radius: 2%;
+    margin: 0 2vw 0 2vw;
+}
+
+#main-text-container{
+    visibility: none;
+    opacity: 0;
+    transition: all 1.5s ease;
+    margin-top: 12vh;
+}
+
+.headings{
+    font-weight: 100;
+}
+
+#location-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+    align-items: center;
+    position: relative;
+}
+
+#location-visual{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#meet-the-team-button{
+    width: 20%;
+    height: 5vh;
+    border-radius: 24px;
+}
+
+#aside-text{
+    width: 50%;
+    padding: 4%;
+}
+
+#location-text{
+    font-size: 3vh;
+}
+
+#location-pin{
+    aspect-ratio: 1 / 1;
+    width: 7%;
+    transition: all 0.3s ease;
+}
+
+#beneficiaries-section{
+    margin-top: 20vh;
+    position: relative;
+    display: flex;
+}
+
+#beneficiaries-list{
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    font-size: 2.4vh;
+    gap: 3vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#lives-changed-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#beneficiaries-heading{
+    text-decoration: underline;
+    font-size: 3.5vh;
+}
+
+#lives-changed-heading{
+    font-size: 3vw;
+}
+
+#counter{
+    font-size: 2.7vw;
+}
+
+#list-section {
+    width: 60%;
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+#list-section li {
+    opacity: 0;
+    transition: all 0.5s ease;
+    text-align: left;
+}
+
+#suggestion-link{
+    color: rgb(170, 59, 59);
+}
+
+#help-section{
+    display: flex;
+    margin-top: 20vh;
+    justify-content: center;
+}
+
+#options{
+    padding-left: 2%;
+    width: 80%;
+}
+
+#banking-details{
+    list-style: none;
+    padding: 0;
+}
+
+#help-heading{
+    font-weight: 340;
+}
+
+#volunteer-image {
+    width: 39%; 
+    aspect-ratio: 15 / 22; 
+    float: right;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #vision-photo{
+        display: none;
+    }
+
+    #details-section{
+        font-size: 2.2vh;
+    }
+
+    
+    #location-section{
+        display: flex;
+        justify-content: center;
+        margin-top: 20vh;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
 }

@@ -1,22 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/homePageStyling.css">
+    <link rel="stylesheet" href="../CSS/generalStyling.css">
+    <link rel="stylesheet" href="../CSS/navigationBarStyling.css">
     <script src="../Javascript/homePage.js" defer></script>
+    <script src="../Javascript/cursor.js" defer></script>
+    <script type="module"> import { loadNavbar } from "../Javascript/navigationBar.js"
+        loadNavbar("Home")
+    </script>
 </head>
+
 <body>
-    <section id="hero">
-        <div id="text-container">
-            <span id="r-letter" class="stationary-letters">R</span><span class="fade-text">ebuilding </span>
-            <span id="a-letter" class="stationary-letters">A</span><span class="fade-text">frican </span>
-            <span id="s-letter" class="stationary-letters">S</span><span class="fade-text">ocieties through Shared </span>
-            <span id="h-letter" class="stationary-letters">H</span><span class="fade-text">ope and </span>
-            <span id="second-a-letter" class="stationary-letters">A</span><span class="fade-text">id</span>
+    <header id="header">
+        <div id="name-section">
+            <img src="../Images/Rasha Fonudation Logo.png" alt="Image of the logo" id="nav-logo">
+            <div id="name-logo">Rebuilding African Societies through shared Hope and Aid</div>
         </div>
-        
-    </section>
+        <nav id="nav-bar">
+            <div id="burger-menu">
+                <img src="../Images/burger-bar.png" alt="Burger menu icon" id="burger-icon">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <svg xmlns="http://www.w3.org/2000/svg" class="goo" version="1.1" width="100%">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15"
+                        result="goo"></feColorMatrix>
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+                </filter>
+            </defs>
+        </svg>
+
+        <div id="cursor"></div>
+
+        <section id="hero">
+            <div id="text-container">
+                <span id="r-letter" class="stationary-letters">R</span><span class="fade-text">ebuilding </span>
+                <span id="a-letter" class="stationary-letters">A</span><span class="fade-text">frican </span>
+                <span id="s-letter" class="stationary-letters">S</span><span class="fade-text">ocieties through
+                    Shared</span>
+                <span id="h-letter" class="stationary-letters">H</span><span class="fade-text">ope and </span>
+                <span id="second-a-letter" class="stationary-letters">A</span><span class="fade-text">id</span>
+            </div>
+
+            <div id="scroll-text">
+                Scroll
+            </div>
+        </section>
+
+        <section id="details-section">
+            <h2 id="intro-heading">
+                Who are we?
+            </h2>
+            <div id="main-text-container">
+                <div id="vision-container">
+                    <h3 class="headings">Our vision</h3>
+                    <img src="../Images/Aim Photo.jpg" alt="Image of two boys walking over thrash" id="vision-photo">
+                    <p>
+                        To empower and uplift underprivileged communities in Africa through sustainable aid and
+                        collaborative efforts, ultimately fostering self-reliance and resilience.
+                    </p>
+                </div>
+
+                <h3 class="headings">Mission</h3>
+                <p>The RASHA Foundation is dedicated to providing comprehensive support to less fortunate
+                    individuals and communities in Africa, focusing on immediate relief and long-term development. By
+                    leveraging shared resources and aid, we aim to rebuild African societies, fostering growth,
+                    education,
+                    and economic stability.
+                </p>
+                <p>
+                    The world around us conceals much inequality, hardship and disparity. This is evident in the
+                    struggles
+                    facing Africa’s marginalized and vulnerable communities. We firmly believe that giving back to the
+                    community begins with individuals. Each one of us has the capacity to positively impact the life of
+                    another. We aspire to make that impact, to be catalysts of change in our community, and enable
+                    others to become agents of change in their communities. We can all play a role in rebuilding our
+                    beloved continent, by volunteering our time, or offering resources or services
+                </p>
+                <h3 class="headings">Core Values:</h3>
+                <ul>
+                    <li>
+                        Empathy: We approach our work with a deep understanding and compassion for the communities
+                        we serve.
+                    </li>
+                    <li>
+                        Integrity: We operate with transparency, accountability, and honesty in all our activities.
+                        Collaboration: We believe in the power of partnerships and collective efforts to drive
+                        meaningful
+                        change.
+                    </li>
+                    <li>
+                        Sustainability: We focus on long-term solutions that promote self-reliance and environmental
+                        stewardship.
+                    </li>
+                    <li>
+                        Innovation: We embrace creative and adaptive approaches to solve complex social challenges.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="location-section">
+            <div id="location-visual">
+                <img src="../Images/Location Pin.jpg" alt="Image of a location pin" id="location-pin">
+                <div id="location-text">Johannesburg, South Africa</div>
+            </div>
+            <div id="aside-text">
+                <p>
+                    Our headquarters are located in Johannesburg, a hub for our operations in Southern Africa. From
+                    here, we lead initiatives across the continent, focusing on uplifting marginalized communities. Our
+                    passionate team works tirelessly to drive change and make a lasting impact.
+                </p>
+                <p>
+                    Want to know who’s behind this work? Our team is a group of dedicated professionals, volunteers, and
+                    change-makers committed to our mission. Click below to learn more about the people making this
+                    vision a reality.
+                </p>
+                <button id="meet-the-team-button" class="buttons"><span>Meet the Team</span></button>
+            </div>
+        </section>
+
+        <section id="beneficiaries-section">
+            <div id="list-section">
+
+                <div id="beneficiaries-heading">
+                    Beneficiaries
+                </div>
+
+                <ul id="beneficiaries-list">
+                    <li>
+                        Underprivileged Families
+                    </li>
+                    <li>
+                        Children and Youth
+                    </li>
+                    <li>
+                        Women
+                    </li>
+                    <li>
+                        Unemployed Individuals
+                    </li>
+                    <li>
+                        Elderly and Disabled Persons
+                    </li>
+                    <li>
+                        Rural Communities
+                    </li>
+                    <li>
+                        Small Business Owners and Entrepreneurs
+                    </li>
+                    <li>
+                        Victims of Disasters and Conflicts
+                    </li>
+                    <li>
+                        Community Organizations
+                    </li>
+                    <li>
+                        <a href="" id="suggestion-link">Feel like we've left someone out? Let us know.</a>
+                    </li>
+                </ul>
+            </div>
+
+            <aside id="lives-changed-section">
+                <div id="lives-changed-heading">Lives changed</div>
+                <h3 id="counter">
+                    000
+                </h3>
+            </aside>
+        </section>
+
+        <section id="help-section">
+            <div id="options">
+                <h2 id="help-heading">Want to help?</h2>               
+
+                <section id="volunteer-section">
+                    <h3 class="headings">Get Involved - Volunteer with Us</h3>
+                    <p>
+                        Volunteering with the RASHA Foundation is a unique opportunity to make a tangible impact on the lives of underprivileged communities across Africa. Whether you’re giving your time, skills, or expertise, your contribution helps create real change in areas that need it the most.
+                    </p>
+                    <img src="../Images/Volunteer.jpg" alt="Image of a volunteer handing our meals" id="volunteer-image">
+                    <p>
+                        We welcome passionate individuals who want to be part of a movement that focuses on sustainable aid, community empowerment, and positive social change. As a volunteer, you will have the chance to work alongside dedicated team members, local leaders, and community members to help bring about meaningful transformation.
+                    </p>
+                    <h3 class="headings">Why Volunteer with Us?</h3>
+                    <ul>
+                        <li>Make a Difference: Your efforts directly contribute to life-changing projects and initiatives.</li>
+                        <li>Develop New Skills: Gain valuable experience working in humanitarian aid, community development, and nonprofit management.</li>
+                        <li>Build Connections: Join a network of like-minded individuals and organizations working toward shared goals.</li>
+                        <li>Fulfill a Cause: Align your passion for helping others with the mission of an impactful NGO.</li>
+                    </ul>
+                    <h3 class="headings">How You Can Help</h3>
+                    <p>
+                        We have a variety of volunteer opportunities that can match your skills, interests, and availability, including:
+                    </p>
+                    <ul>
+                        <li>Event planning and management</li>
+                        <li>Community outreach and engagement</li>
+                        <li>Content creation (e.g., writing, photography, and video production)</li>
+                        <li>Fundraising and donor relations</li>
+                        <li>On-the-ground support for projects and initiatives</li>
+                        <li>Research and data analysis</li>
+                        <li>Administrative and operational tasks</li>
+                    </ul>
+                    <h3 class="headings">Ready to Join Us?</h3>
+                    <p>
+                        Volunteering is an incredible way to contribute to a better future, and we’d love to have you on our team. Whether you’re looking for short-term or long-term opportunities, there’s a place for you here. Click the button below to fill out a volunteer application form and start making a difference today!
+                    </p>
+                    <a href="volunteerForm.html" id="volunteer-signup-button" class="cta-button">Sign Up to Volunteer</a>
+                </section>
+                
+                <section id="bank-section">
+                    <h3 class="headings">Donate</h3>
+                    <p>
+                        <ul id="banking-details">
+                            <li>
+                                Bank: FNB/RMB
+                            </li>
+                            <li>
+                                Account Holder: Amro M A Ahmed
+                            </li>
+                            <li>
+                                Account Type: FNBy Next Transact Account
+                            </li>
+                            <br>
+                            <li>
+                                Account Number: 62929283456
+                            </li>
+                            <li>
+                                Branch Code: 250655
+                            </li>
+                        </ul>
+                    </p>
+                </section>
+            </div>
+            </section>
+
+        <div id="footer">
+            © RASHA. All rights reserved
+        </div>
+    </main>
 </body>
+
 </html>
