@@ -51,6 +51,7 @@ function createIntersectionObserver(target, thresholdLevel) {
                         top: targetPosition,
                         behavior: 'smooth',
                     });
+                    element.style.overflow = "scroll";
                 };
 
                 scrollToPercentage(125); // Adjust as needed
@@ -93,10 +94,12 @@ element.addEventListener('scroll', () => {
 
   if (isAtTop) {
     document.body.style.overflow = 'auto';
+    element.style.overflow = "hidden";
   }
 
   if (isAtBottom) {
     document.body.style.overflow = 'auto';
+    element.style.overflow = "hidden";
   }
 });
 

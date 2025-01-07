@@ -134,7 +134,7 @@ header{
 
 #burger-icon{
     aspect-ratio: 512 / 512;
-    width: 4vw;
+    width: 6vw;
 }
 
 #burger-menu.show{
@@ -158,7 +158,7 @@ header{
     }
 
     #nav-bar ul{
-        margin-top: 2.5vh;
+        margin-top: 4.5vh;
         display: flex;
         flex-direction: column;
         gap: 2vh;
