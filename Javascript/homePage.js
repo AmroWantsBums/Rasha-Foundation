@@ -166,3 +166,7 @@ setInterval(function () {
         locationPin.style.transform = "translateY(-5%)";
     }, 400);
 }, 800);
+
+const teamButton = document.querySelector("#meet-the-team-button").addEventListener("click", function(){
+    window.location.href = "../Meet the team/ourTeamPage.html";
+})

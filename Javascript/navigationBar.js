@@ -1,7 +1,7 @@
 const navPages = [
     {name: "Home" , href: '/Umalrabeain/Home/homePage.html'},
     {name: "Our Work" , href: '/Umalrabeain/General Trade/generalTrade.html'},
-    {name: "Meet Umalrabeain" , href: '/Umalrabeain/Our Team/meetUs.html'},
+    {name: "The Team" , href: '/Umalrabeain/Our Team/meetUs.html'},
     {name: "Contact" , href: '/Umalrabeain/Contact/contact.html'}
 ];
 

@@ -1,0 +1,107 @@
+body {
+    overflow: hidden;
+}
+
+
+.images {
+    width: 45vh;
+    aspect-ratio: 15 / 20;
+    border-radius: 2%;
+}
+
+.character-container .name {
+    grid-area: Name;
+}
+
+.character-container .position {
+    grid-area: Position;
+}
+
+.character-container .content-text {
+    grid-area: Description;
+    max-height: 100%;
+    font-size: 2vh;
+    overflow: auto;
+    padding: 8%;
+    border-radius: 2%;
+    background-color: rgba(212, 215, 218, 0.163);
+}
+
+.character-container .images{
+    grid-area: Image;
+}
+
+#grid-container #nav-arrows {
+    grid-area: Arrows;
+}
+
+#grid-container {
+    margin-top: 9vh;
+    display: grid;  /* Make the parent container a grid */
+    grid-template-areas:
+        "Name Image"
+        "Position Image"
+        "Description Image"
+        "Arrows .";  /* You can modify this according to the structure you want */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 4fr 2fr;
+    height: 70vh;
+    width: 70vw;
+    position: relative;  /* Ensure absolute positioning works for the arrows */
+}
+
+.character-container {
+    position: absolute;
+    left: 24vw;
+    margin: 0;
+    transition: all 0.6s ease;
+    
+    display: grid;
+    grid-template-areas:
+        "Name Image"
+        "Position Image"
+        "Description Image"
+        "Arrows .";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 4fr 2fr;
+    height: 70vh;
+    width: 70vw;
+}
+
+.character-container.active {
+    opacity: 1;  /* Show active container */
+    z-index: 1;  /* Bring active container to front */
+}
+
+
+
+#left-arrow, #right-arrow {
+    width: 3vw;
+    z-index: 1000;
+}
+
+#nav-arrows {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vw;
+    padding-top: 10vh;
+    transform: translateX(350%);
+}
+
+h2 {
+    font-size: 3.5vh;
+    font-weight: 100;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2.7vh;
+    font-weight: 100;
+    margin: 0;
+}
+
+p {
+    font-size: 2.5vh;
+}
