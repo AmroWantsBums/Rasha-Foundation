@@ -1,36 +1,37 @@
-const characters = document.querySelectorAll(".character-container");
-let index = 0;
-updateDisplay(0);
+const characterContainers = document.querySelectorAll(".character-container");
 
-function updateDisplay(currentIndex){
-    characters.forEach(character => {
-        character.style.opacity = 0; 
-        character.style.visibility = "hidden";
-        character.classList.remove(".active");
-        characters[currentIndex].style.visibility = "visible";
-        characters[currentIndex].style.opacity = 1;
-        characters[currentIndex].classList.add(".active");
-    });
+characterContainers.forEach(container => {
     
-}
-const nextButton = document.querySelector("#right-arrow").addEventListener("click", function(){
-    if (index < characters.length){
-        index++;
-        updateDisplay(index);
-    }
-    else{
-        index = 0;
-        updateDisplay(index);
-    }
-})
+        container.addEventListener("mouseover", function(){
+            if (window.innerWidth >= 768) {
 
-const previousButton = document.querySelector("#left-arrow").addEventListener("click", function(){
-    if (index > 0){
-        index--;
-        updateDisplay(index);
-    }
-    else{
-        index = characters.length - 1;
-        updateDisplay(index);
-    }
-})
+            let content = container.querySelector(".content-text");
+            let image = container.querySelector(".images");
+            let name = container.querySelector(".name");
+            let position = container.querySelector(".position");
+    
+            content.style.display = "block"; 
+            content.style.opacity = 1;
+            image.style.display = "none"; 
+            name.style.display = "none";
+            position.style.display = "none"; 
+            container.style.overflow = "auto";
+            }
+        });
+    
+        container.addEventListener("mouseleave", function(){
+            if (window.innerWidth >= 768) {
+            let content = container.querySelector(".content-text");
+            let image = container.querySelector(".images");
+            let name = container.querySelector(".name");
+            let position = container.querySelector(".position");
+    
+            content.style.display = "none"; 
+            content.style.opacity = 0;
+            image.style.display = "block"; 
+            name.style.display = "block";
+            position.style.display = "block"; 
+            container.style.overflow = "hidden";
+            }
+        });
+});
