@@ -74,7 +74,7 @@ p {
     }  
     
     .buttons{
-        width: 23%;
+        width: 43%;
         height: 6vh;
         border-radius: 20px;
     }
@@ -84,12 +84,22 @@ p {
     }
 
     .images {
-        width: 40%;
+        width: 100%;
         aspect-ratio: 15 / 10;
         border-radius: 2%;
     }
-
+    h2 {
+        font-size: 1.8vh;
+        font-weight: 100;
+        margin: 0;
+    }
     
+    h3 {
+        font-size: 1vh;
+        font-weight: 100;
+        margin: 0;
+    }
+
 }
 
 @media screen and (max-width: 360px) {

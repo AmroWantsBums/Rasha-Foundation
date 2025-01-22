@@ -1,8 +1,8 @@
 const navPages = [
-    {name: "Home" , href: '/Umalrabeain/Home/homePage.html'},
-    {name: "Our Work" , href: '/Umalrabeain/General Trade/generalTrade.html'},
-    {name: "The Team" , href: '/Umalrabeain/Our Team/meetUs.html'},
-    {name: "Contact" , href: '/Umalrabeain/Contact/contact.html'}
+    {name: "Home" , href: '/Rasha-Foundation/Home/homePage.html'},
+    {name: "Our Work" , href: '/Rasha-Foundation/Our Work/work.html'},
+    {name: "The Team" , href: '/Rasha-Foundation/Meet the team/ourTeamPage.html'},
+    {name: "Contact" , href: '/Rasha-Foundation/Contact/contact.html'}
 ];
 
 export function loadNavbar(CurrentPageName){

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/generalStyling.css">
+    <link rel="stylesheet" href="../CSS/contactStyling.css">
+    <link rel="stylesheet" href="../CSS/navigationBarStyling.css">
+    <script src="../Javascript/cursor.js" defer></script>
+    <script type="module">
+        import { loadNavbar } from "../Javascript/navigationBar.js";
+        loadNavbar("Contact");
+    </script>
+    <script src="../Javascript/ourTeamPage.js" defer></script>
+</head>
+
+<body>
+    <header id="header">
+        <div id="name-section">
+            <img src="../Images/Rasha Fonudation Logo.png" alt="Image of the logo" id="nav-logo">
+            <div id="name-logo">Rebuilding African Societies through shared Hope and Aid</div>
+        </div>
+        <nav id="nav-bar">
+            <div id="burger-menu">
+                <img src="../Images/burger-bar.png" alt="Burger menu icon" id="burger-icon">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <svg xmlns="http://www.w3.org/2000/svg" class="goo" version="1.1" width="100%">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15" result="goo"></feColorMatrix>
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+                </filter>
+            </defs>
+        </svg>
+
+        <div id="cursor"></div>
+
+        <section id="content">
+            <div id="first-section">
+                <h1 id="heading">Get in touch</h1>
+                <p>
+                    We'd love to hear from you! Whether you have questions, sugesstions or even thoughts, our team is here to help.
+                </p>
+            </div>
+            <div id="second-section">
+                <h1>Our address</h1>
+                <p>
+                    217 Senior Drive, Blackheath Johannesburg 2092
+                </p>
+            </div>
+            <div id="third-section">
+                <h1>Our contact info</h>
+                <p>
+                    Our team is available by phone at +2712 345 6789 to answer your questions and concerns.
+                    <br>
+                    <br>
+                    <button id="phone-button" class="buttons" onclick="window.location.href='tel:+27234567890'"><span>Call Us</span></button>
+                </p>
+                <p>
+                    We are also available on Email at "umalrabeain.ptyltd@gmail.com". Feel free to email us there.
+                    <br>
+                    <br>
+                    <button id="email-button" class="buttons" onclick="window.location.href='mailto:umalrabeain.ptyltd@gmail.com'"><span>Email Us</span></button>
+                </p>
+            </div>
+        </section>
+
+        <div id="footer">
+            © RASHA. All rights reserved
+        </div>
+    </main>
+</body>
+</html>
