@@ -1,0 +1,101 @@
+
+.timeline-container {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    transition: all 0.4s;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: left;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: right;
+}
+
+.timeline-item .content {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.timeline-item .year {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.timeline-container::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #000000;
+    transform: translateX(-50%);
+}
+
+.project-image{
+    width: 39%; 
+    aspect-ratio: 15 / 22; 
+    display: none;
+}
+
+.project-displays{
+    width: 30%;
+    height: 80vh;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+
+#project-container{
+    width: 100vw;
+    position: fixed;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+
+@media (max-width: 768px) {
+    .timeline-container {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .timeline-item {
+        width: 100%; 
+        left: 0;
+        text-align: left; 
+        margin-bottom: 20px; 
+    }
+
+    .timeline-container::before {
+        display: none;
+    }
+    
+    /* Optional: Make content background color different for mobile to improve visibility */
+    .timeline-item .content {
+        background-color: #e3e3e3;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+        text-align: right;
+    }
+}
+
