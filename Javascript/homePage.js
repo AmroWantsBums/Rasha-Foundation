@@ -170,3 +170,7 @@ setInterval(function () {
 const teamButton = document.querySelector("#meet-the-team-button").addEventListener("click", function(){
     window.location.href = "../Meet the team/ourTeamPage.html";
 })
+
+const volunteerButton = document.querySelector("#volunteer-signup-button").addEventListener("click", function(){
+    window.location.href = "../Volunteer/volunteer.php";
+})
