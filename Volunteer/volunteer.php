@@ -39,11 +39,13 @@
 
         <div id="cursor"></div>
 
-        <form action="">
+        <form action="../Volunteer/Includes/volunteer.inc.php" method="post">
+            <label for="name">Full Name</label>
             <input type="text" name="name" placeholder="Full name">
             <input type="text" name="email" placeholder="Email">
             <input type="text" name="phone-number" placeholder="Phone number">
             <input type="text" name="reason" placeholder="Reason for volunteer">
+            <button type="submit"></button>
         </form>
 
         
