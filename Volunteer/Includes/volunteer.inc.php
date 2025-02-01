@@ -27,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         if ($errors){
             $_SESSION["errors_signup"] = $errors;
+            die();
         }
         
         send_application($pdo, $name, $number, $email, $message);
