@@ -23,8 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $errors["invalid_email"] = "Invalid email used";
         }
 
+        require_once("./config_session.inc.php");
+
         if ($errors){
-            
+            $_SESSION["errors_signup"] = $errors;
         }
     
     } catch (PDOException $e) {

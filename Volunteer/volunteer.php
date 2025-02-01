@@ -1,3 +1,8 @@
+<?php
+    require_once "./Includes/config_session.inc.php";
+    require_once "./Includes/volunteer_view.inc.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,6 +53,9 @@
             <button type="submit"></button>
         </form>
 
+        <?php
+            check_signup_errors();
+        ?>
         
         <div id="footer">
             © RASHA. All rights reserved
