@@ -16,6 +16,7 @@
         import { loadNavbar } from "../Javascript/navigationBar.js";
         loadNavbar("Volunteer");
     </script>
+    <script src="../Javascript/volunteerPage.js" defer></script>
 </head>
 
 <body>
@@ -50,7 +51,7 @@
             <input type="text" name="email" placeholder="Email">
             <input type="text" name="phone-number" placeholder="Phone number">
             <input type="text" name="reason" placeholder="Reason for volunteer">
-            <button type="submit"></button>
+            <button type="submit" id="submit-button">Apply</button>
         </form>
 
         <?php
