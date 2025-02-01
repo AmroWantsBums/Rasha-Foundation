@@ -28,7 +28,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if ($errors){
             $_SESSION["errors_signup"] = $errors;
         }
-    
+        
+        send_application($pdo, $name, $number, $email, $message);
+
+        echo '<div id="success-message">';
+
+        echo '<p">Application sent. Thank you for volunteering</p>';
+        
+        echo '</div>';
+
     } catch (PDOException $e) {
         die("Query failed: " . $e->getMessage());
     }
