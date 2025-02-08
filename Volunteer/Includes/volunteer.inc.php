@@ -7,6 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $number = $_POST["phone-number"];
     $reason = $_POST["reason"];
 
+    var_dump($name, $email, $number, $reason);
+
     try {
         require_once("./dbh.inc.php");
         require_once("./volunteer_contr.inc.php");
