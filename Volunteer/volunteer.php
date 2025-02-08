@@ -50,7 +50,7 @@
             <input type="text" name="name" placeholder="Full name" id="name-input">
             <label for="email-input">Email</label>
             <input type="text" name="email" placeholder="Email" id="email-input">
-            <label for="number-input">Phone number</label>
+            <label for="number-input">one number</label>
             <input type="text" name="phone-number" placeholder="Phone number" id="phone-input">
             <label for="reason-input">Reason for volunteering</label>
             <input type="text" name="reason" placeholder="Reason for volunteer" id="reason-input">
