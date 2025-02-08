@@ -45,7 +45,7 @@
 
         <div id="cursor"></div>
 
-        <form action="../Volunteer/Includes/volunteer.inc.php" method="post">
+        <form action="./Includes/volunteer.inc.php" method="post">
             <label for="name-input">Full name</label>
             <input type="text" name="name" placeholder="Full name" id="name-input">
             <label for="email-input">Email</label>
