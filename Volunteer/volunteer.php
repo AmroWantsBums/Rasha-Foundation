@@ -46,14 +46,14 @@
         <div id="cursor"></div>
 
         <form action="../Volunteer/Includes/volunteer.inc.php" method="post">
-            <label for="name">Full name</label>
-            <input type="text" name="name" placeholder="Full name">
-            <label for="email">Email</label>
-            <input type="text" name="email" placeholder="Email">
-            <label for="phone-number">Phone number</label>
-            <input type="text" name="phone-number" placeholder="Phone number">
-            <label for="reason">Reason for volunteering</label>
-            <input type="text" name="reason" placeholder="Reason for volunteer">
+            <label for="name-input">Full name</label>
+            <input type="text" name="name" placeholder="Full name" id="name-input">
+            <label for="email-input">Email</label>
+            <input type="text" name="email" placeholder="Email" id="email-input">
+            <label for="number-input">Phone number</label>
+            <input type="text" name="phone-number" placeholder="Phone number" id="phone-input">
+            <label for="reason-input">Reason for volunteering</label>
+            <input type="text" name="reason" placeholder="Reason for volunteer" id="reason-input">
             <button type="submit" id="submit-button">Apply</button>
         </form>
 
