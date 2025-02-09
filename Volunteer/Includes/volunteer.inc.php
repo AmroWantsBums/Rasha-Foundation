@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             die();
         }
         
-        send_application($pdo, $name, $number, $email, $message);
+        send_application($pdo, $name, $number, $email, $reason);
 
         echo '<div id="success-message">';
 
