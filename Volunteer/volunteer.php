@@ -16,7 +16,7 @@
         import { loadNavbar } from "../Javascript/navigationBar.js";
         loadNavbar("Volunteer");
     </script>
-    <script src="../Javascript/volunteerPage.js" defer></script>
+    <!-- <script src="../Javascript/volunteerPage.js" defer></script> -->
 </head>
 
 <body>
