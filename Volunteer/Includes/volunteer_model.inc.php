@@ -9,6 +9,6 @@ function send_application(object $pdo, string $name, string $number, string $ema
     $stmt->bindParam(":name", $name);
     $stmt->bindParam(":number", $number);
     $stmt->bindParam(":email", $email);
-    $stmt->bindParam(":message", $reason);
+    $stmt->bindParam(":reason", $reason);
     $stmt->execute();
 }
