@@ -47,7 +47,7 @@
 
         <?php
             require_once("./Includes/dbh.inc.php");
-            
+            require_once("./Includes/admin_files/admin.model.inc.php");
             $volunteers = fetch_volunteers($pdo);
         ?>
         <div id="volunteers">
