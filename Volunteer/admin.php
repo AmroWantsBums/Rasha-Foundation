@@ -48,10 +48,10 @@
         <?php
             require_once("./Includes/dbh.inc.php");
             
-            fetch_volunteers($pdo);
+            $volunteers = fetch_volunteers($pdo);
         ?>
         <div id="volunteers">
-            <?php foreach ($volunteers as $volunteer): ?>
+            <?php foreach ($volunteers as $volunteer) { ?>
                 <div class="volunteer-container">
                     <h2 class="volunteer-name"><?php echo htmlspecialchars($volunteer['name']); ?></h2>
                     <h3 class="volunteer-email"><?php echo htmlspecialchars($volunteer['email']); ?></h3>
@@ -60,7 +60,7 @@
                     <button class="buttons accept-button">Accept</button>
                     <button class="buttons reject-button">Reject</button>
                 </div>
-            <?php endforeach; ?>
+            <?php } ?>
         </div>
 
 
